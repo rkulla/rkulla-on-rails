@@ -1,0 +1,5 @@
+# Put this file in your $HOME dir
+
+# I don't normally read offline docs. And gems will install faster:
+install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri

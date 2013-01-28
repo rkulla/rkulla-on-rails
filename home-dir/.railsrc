@@ -1,0 +1,4 @@
+# Put this file in your $HOME directory
+
+# I prefer to use RSpec, so don't create the default test unit stuff
+--skip-test-unit
