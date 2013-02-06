@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
-gem 'sqlite3'
 gem 'jquery-rails'
 gem 'haml-rails', '~> 0.3.5'
+
+### Database ###
+gem 'sqlite3' # For default rails, prototyping, and testing
+gem 'pg'
+
+### Web server ###
+#gem 'thin'  # If heroku
+#gem 'pow'  # If rapid prototyping in Mac OS X
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +36,4 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
-  # gem 'thin'  # if heroku
 end
