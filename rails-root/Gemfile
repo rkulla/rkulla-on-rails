@@ -4,13 +4,10 @@ gem 'rails', '3.2.11'
 gem 'jquery-rails'
 gem 'haml-rails', '~> 0.3.5'
 
-### Database ###
-gem 'sqlite3' # For default rails, prototyping, and testing
 gem 'pg'
 
-### Web server ###
-#gem 'thin'  # If heroku
-#gem 'pow'  # If rapid prototyping in Mac OS X
+gem 'thin'  # If on Heroku, or prototyping on Ubuntu
+# gem 'pow'  # If rapid prototyping in Mac OS X
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -22,10 +19,14 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'sqlite3' # For default rails, prototyping, and testing
+
   gem 'rspec-rails', '>= 2.8.1'
+  gem 'jasminerice'
   gem 'rb-inotify', '~> 0.8.8', :require => false # If on Ubuntu
   gem 'rb-fsevent', :require => false # If on OSX
   gem 'guard-rspec'
+  gem 'guard-jasmine'
 end
 
 group :test do
