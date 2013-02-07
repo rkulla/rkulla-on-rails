@@ -18,6 +18,13 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby # For Ubuntu
 end
 
+group :development do
+  gem 'brice'
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'awesome_print'
+end
+
 group :development, :test do
   gem 'sqlite3' # For default rails, prototyping, and testing
 
