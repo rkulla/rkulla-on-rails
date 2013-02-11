@@ -1,34 +1,33 @@
-# Put in your $HOME directory
-
 [user]
 	name = Ryan Kulla
 	email = rkulla@gmail.com
 [core]
-    editor = vim
+	editor = vim
 [merge]
-    tool = vimdiff
+	tool = vimdiff
 [color]
-    ui = true
+	ui = true
 [color "status"]
-    untracked = red bold
-    changed = yellow bold
-    added = green bold
+	untracked = red bold
+	changed = yellow bold
+	added = green bold
 [color "diff"]
-    meta = yellow bold
-    frag = cyan bold
-    new = green bold
-    old = red bold
-    whitespace = red reverse
+	meta = yellow bold
+	frag = cyan bold
+	new = green bold
+	old = red bold
+	whitespace = red reverse
 [alias]
-    s = status
-    st = status
+	s = status
+	st = status
 	co = checkout
 	ci = commit
-    rv = remote -v
+	rv = remote -v
 	gap = add -p
-    bi = bisect
-    ds = diff --staged
-    pa = log -S # pickaxe
-    lol = log --pretty=format:\"%C(yellow)%h%d%Creset %s - %an [%ar]\"
-    today = log --since=yesterday
-    last = cat-file commit HEAD  # Use this more though: git show
+	bi = bisect
+	ds = diff --staged
+	pa = log -S # pickaxe
+	lol = log --pretty=format:\"%C(yellow)%h%d%Creset %s - %an [%ar]\"
+	today = log --since=yesterday
+	last = cat-file commit HEAD  # Use this more though: git show
+    
