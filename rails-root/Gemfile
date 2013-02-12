@@ -20,8 +20,8 @@ end
 
 group :development do
   gem 'brice'
-  gem 'pry-rails'
-  gem 'pry-doc'
+  gem 'pry-rails', '~> 0.2.2'
+  gem 'pry-doc', '~> 0.4.4'
   gem 'awesome_print'
 end
 
@@ -32,7 +32,7 @@ group :development, :test do
   gem 'jasminerice'
   gem 'rb-inotify', '~> 0.8.8', :require => false # If on Ubuntu
   gem 'rb-fsevent', :require => false # If on OSX
-  gem 'guard-rspec'
+  gem 'guard-rspec', '~> 2.4.0'
   gem 'guard-jasmine'
 end
 
@@ -43,5 +43,6 @@ group :test do
   gem 'database_cleaner'
 end
 
+# To avoid installing these gems locally, run bundle using: --without production
 group :production do
 end
