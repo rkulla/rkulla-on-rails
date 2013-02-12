@@ -7,3 +7,10 @@ Guardfile
 .rvmrc
 *.sassc
 .sass-cache
+tags
+.DS_Store
+._.DS_Store
+.project
+*.swp
+*.swo
+*~
