@@ -6,8 +6,7 @@ gem 'haml-rails', '~> 0.4'
 
 gem 'pg'
 
-gem 'thin'  # If on Heroku, or prototyping on Ubuntu
-# gem 'pow'  # If rapid prototyping in Mac OS X
+gem 'thin'  # If on Heroku, or Ubuntu. If OSX, install 'pow' instead (which doesn't have a gem)
 
 # Gems used only for assets and not required
 # in production environments by default.
